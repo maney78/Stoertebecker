@@ -120,6 +120,63 @@
           "ioValue": 0
         }
       ]
+    },
+    {
+      "atomType": "Rectangle",
+      "name": "Rectangle",
+      "x": 0.22891566265060243,
+      "y": 0.8640776699029127,
+      "uniqueID": "id-71",
+      "ioValues": [
+        {
+          "name": "x length",
+          "ioValue": 300,
+          "currentEquation": "300"
+        },
+        {
+          "name": "y length",
+          "ioValue": 500,
+          "currentEquation": "500"
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "name": "Extrude",
+      "x": 0.7764390896921017,
+      "y": 0.7815533980582524,
+      "uniqueID": "id-75",
+      "ioValues": [
+        {
+          "name": "height",
+          "ioValue": 10
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "name": "Move",
+      "x": 0.5046854082998661,
+      "y": 0.9199029126213593,
+      "uniqueID": "id-79",
+      "ioValues": [
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Difference",
+      "name": "Difference",
+      "x": 0.6921017402945114,
+      "y": 0.6189320388349514,
+      "uniqueID": "id-85",
+      "ioValues": []
     }
   ],
   "allConnectors": [
@@ -135,11 +192,24 @@
       "ap1ID": "id-23",
       "ap2ID": "id-53"
     },
+    null,
     {
       "ap1Name": "geometry",
       "ap2Name": "geometry",
       "ap1ID": "id-53",
       "ap2ID": "id-26"
+    },
+    {
+      "ap1Name": "geometry",
+      "ap2Name": "geometry",
+      "ap1ID": "id-71",
+      "ap2ID": "id-75"
+    },
+    {
+      "ap1Name": "geometry",
+      "ap2Name": "zDist",
+      "ap1ID": "id-75",
+      "ap2ID": "id-79"
     }
   ],
   "unitsKey": "MM",
